@@ -42,61 +42,87 @@
 
         <div class="form-group">
             Sort By:
-            <select class="custom-select" name="sortby">
+            <select class="custom-select sort_option" name="sort_option">
                 <option value=""></option>
-                <option value="">Price (Lowest First)</option>
-                <option value="">Price (Highest First)</option>
-                <option value="">Newest Listing</option>
-                <option value="">Oldest Listing</option>
+                <option value="lowest">Price (Lowest First)</option>
+                <option value="highest">Price (Highest First)</option>
+                <option value="newest">Newest Listing</option>
+                <option value="oldest">Oldest Listing</option>
             </select>
         </div>
-
-        <div class="card mb-5">
-            <div class="card-header">
-                <span>Pokemon Sword</span>
-                <h6>01/01/2020</h6>
-            </div>
-            <div class="row p-3">
-                <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                    <img class="listing_img" src="./images/place_holder/sword.jpg">
+        <div class="listings">
+            <div class="card mb-5 listing">
+                <div class="card-header">
+                    <span>Pokemon Sword</span>
+                    <h6 class="date">12/01/2019</h6>
                 </div>
-                <div class="col-sm-6 col-md-8 col-lg-9 col-xl-10">
-                    <div class="card-body">
-                        <h5 class="card-title">Pokemon Sword in Mint Condition</h5>
-                        <h6 class="price">$40</h6>
-                        <h6 class="date">01/01/2020</h6>
+                <div class="row p-3">
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <img class="listing_img" src="./images/place_holder/sword.jpg">
+                    </div>
+                    <div class="col-sm-6 col-md-8 col-lg-9 col-xl-10">
+                        <div class="card-body">
+                            <h5 class="card-title">Pokemon Sword in Mint Condition</h5>
+                            <h6 class="price">$40</h6>
 
-                        <p class="card-text">New Copy of Pokemon Sword, has not been opened. Will ship to any location
-                            in the US</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <p class="card-text">New Copy of Pokemon Sword, has not been opened. Will ship to any
+                                location
+                                in the US</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-5 listing">
+                <div class="card-header">
+                    <span>Pokemon Sword</span>
+                    <h6 class="date">12/01/2020</h6>
+                </div>
+                <div class="row p-3">
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <img class="listing_img" src="./images/place_holder/sword.jpg">
+                    </div>
+                    <div class="col-sm-6 col-md-8 col-lg-9 col-xl-10">
+                        <div class="card-body">
+                            <h5 class="card-title">Pokemon Sword in Mint Condition</h5>
+                            <h6 class="price">$50</h6>
+                            <p class="card-text">New Copy of Pokemon Sword, has not been opened. Will ship to any
+                                location
+                                in the US</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-5 listing">
+                <div class="card-header">
+                    <span>Pokemon Sword</span>
+                    <h6 class="date">12/01/2023</h6>
+                </div>
+                <div class="row p-3">
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <img class="listing_img" src="./images/place_holder/sword.jpg">
+                    </div>
+                    <div class="col-sm-6 col-md-8 col-lg-9 col-xl-10">
+                        <div class="card-body">
+                            <h5 class="card-title">Pokemon Sword in Mint Condition</h5>
+                            <h6 class="price">$65.50</h6>
+                            <p class="card-text">New Copy of Pokemon Sword, has not been opened. Will ship to any
+                                location
+                                in the US</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="card mb-5">
-            <div class="card-header">
-                <span>Pokemon Sword</span>
-                <h6 class="date">12/01/2019</h6>
-            </div>
-            <div class="row p-3">
-                <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                    <img class="listing_img" src="./images/place_holder/sword.jpg">
-                </div>
-                <div class="col-sm-6 col-md-8 col-lg-9 col-xl-10">
-                    <div class="card-body">
-                        <h5 class="card-title">Pokemon Sword in Mint Condition</h5>
-                        <h6 class="price">$50</h6>
-                        <p class="card-text">New Copy of Pokemon Sword, has not been opened. Will ship to any location
-                            in the US</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-        </div>
 
 
     </div>
+    <script src="./scripts/listing.js"></script>
 </body>
 
 </html>
