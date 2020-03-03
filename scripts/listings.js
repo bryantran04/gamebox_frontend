@@ -2,7 +2,7 @@ const selectElement = document.querySelector('.sort_option');
 const listings = Array.from(document.getElementsByClassName('listing'));
 
 
-
+// Parse for number
 function getPrice(element) {
     return Number(element
         .querySelector('.price')
