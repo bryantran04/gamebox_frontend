@@ -32,18 +32,22 @@
             <div class="form-group">
                 <label>Title</label>
                 <input type="input" class="form-control" id="title" name="title">
+                <div id="title_warning" class="warning">Title must have at least 10 characters</div>
             </div>
             <div class="form-group">
                 <label for="game">Game</label>
                 <input type="input" class="form-control" id="game" name="game">
+                <div id="game_warning" class="warning">Game Title must have at least 1 characters</div>
             </div>
             <div class="form-group">
                 <label for="game">Location</label>
                 <input type="input" class="form-control" id="location" name="location">
+                <div id="location_warning" class="warning">Location cannot be empty</div>
             </div>
             <div class="form-group">
                 <label for="price">Price</label>
                 <input type="input" class="form-control" id="price" name="price">
+                <div id="price_warning" class="warning">Price must be valid currency format Ex. 10.50</div>
             </div>
             <div class="form-group">
                 <label for="exampleFormControlSelect1">Condition</label>
@@ -70,6 +74,7 @@
                 <label for="description">Description</label>
                 <textarea class="form-control" id="description" rows="3"></textarea>
                 <p>Number of characters: <span id="length_description">0</span></p>
+                <div id="description_warning" class="warning">Description must be less than 1000 characters</div>
             </div>
             <form>
                 <div class="form-group">

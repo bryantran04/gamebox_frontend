@@ -66,3 +66,8 @@
   display: block;
   margin: auto;
 }
+
+.warning {
+  color: red;
+  display: none;
+}

@@ -19,46 +19,71 @@ function isInt(str) {
 }
 
 var checkMoneyExpression = function (str) {
-    // test if str matches the money pattern		
     var pattern = new RegExp("^[0-9]+(\.[0-9]{1,2})?$");
     var match_test = pattern.test(str);
     return match_test;
 }
 
-// Four tests:
 
 
 function checkListingForm() {
     const title = document.getElementById("title");
+    const title_warning = document.getElementById("title_warning");
     if (title.value.length < 10) {
-        alert("Title must have at least 10 characters");
+        title.style.borderColor = "red"
+        title_warning.style.display = "block"
         title.focus()
-        return false;
+    } else {
+        title.style.borderColor = "#ced4da"
+        title_warning.style.display = "none"
     }
 
     const game = document.getElementById("game");
+    const game_warning = document.getElementById("game_warning");
 
     if (game.value.length < 1) {
-        alert("Game Title must have at least 1 characters");
+        game.style.borderColor = "red"
+
         game.focus()
-        return false;
+        game_warning.style.display = "block"
+    } else {
+        game.style.borderColor = "#ced4da"
+
+        game_warning.style.display = "none"
+    }
+
+    const location = document.getElementById("location");
+    const location_warning = document.getElementById("location_warning");
+
+    if (location.value.length < 1) {
+        location.style.borderColor = "red"
+        location.focus()
+        location_warning.style.display = "block"
+    } else {
+        location.style.borderColor = "#ced4da"
+        location_warning.style.display = "none"
     }
 
     const price = document.getElementById("price");
+    const price_warning = document.getElementById("price_warning");
 
     if ((checkMoneyExpression(price.value)) == false) {
-        alert("Price must be valid currency format Ex. 10.50");
+        price.style.borderColor = "red"
+        price_warning.style.display = "block"
         price.focus()
-        return false
+    } else {
+        price.style.borderColor = "#ced4da"
+        price_warning.style.display = "none"
     }
 
     const description = document.getElementById("description");
+    const description_warning = document.getElementById("description_warning");
+
     if (description.value.length > 1000) {
-        alert("Description must be less than 1000 characters");
+        description_warning.style.display = "block"
+
         description.focus()
-        return false;
+    } else {
+        description_warning.style.display = "none"
     }
-
-    return true;
-
 }
